@@ -26,6 +26,8 @@ function editNames(){
 }
 
 playButton.addEventListener("click",() =>{
+    
+   
 
     player1dice.setAttribute("src", randomImageSource)
 
@@ -33,11 +35,11 @@ playButton.addEventListener("click",() =>{
 
     if(randomNumber1 > randomNumber2){
 
-        document.querySelector("h1").innerHTML = "🚩"+ player1+ "Wins!"
+        document.querySelector("h1").innerHTML = "🚩 Player on Left Wins!"
     
     }else if(randomNumber1 < randomNumber2){
 
-        document.querySelector("h1").innerHTML = player2 + "Wins! 🚩"
+        document.querySelector("h1").innerHTML = " Player on Right Wins! 🚩"
 
     } else {
 
