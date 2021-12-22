@@ -33,11 +33,11 @@ playButton.addEventListener("click",() =>{
 
     if(randomNumber1 > randomNumber2){
 
-        document.querySelector("h1").innerHTML = "🚩 Player 1 Wins1"
+        document.querySelector("h1").innerHTML = "🚩"+ player1+ "Wins!"
     
     }else if(randomNumber1 < randomNumber2){
 
-        document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩"
+        document.querySelector("h1").innerHTML = player2 + "Wins! 🚩"
 
     } else {
 
