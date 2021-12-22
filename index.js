@@ -1,5 +1,6 @@
 
-// Determine dice for each player
+var player1 = prompt("Enter Player 1 Name")
+var player2 = prompt("Enter Player 2 Name")
 var randomNumber1 = Math.floor(Math.random()*6)+1;
 
 var randomDiceImage = "dice" + randomNumber1 + ".png";
@@ -18,16 +19,11 @@ var player2dice = document.querySelectorAll("img")[1];
 
 var playButton = document.querySelector(".btn")
 
-function editNames(){
-    var player1 = prompt("Change Player 1 Name")
-    var player2 = prompt("Chane Player 2 Name")
     document.querySelectorAll("p")[0].innerHTML = player1
     document.querySelectorAll("p")[1].innerHTML = player2
-}
+
 
 playButton.addEventListener("click",() =>{
-    
-   
 
     player1dice.setAttribute("src", randomImageSource)
 
@@ -35,11 +31,11 @@ playButton.addEventListener("click",() =>{
 
     if(randomNumber1 > randomNumber2){
 
-        document.querySelector("h1").innerHTML = "🚩 Player on Left Wins!"
+        document.querySelector("h1").innerHTML = "🚩" + player1+ " Wins1"
     
     }else if(randomNumber1 < randomNumber2){
 
-        document.querySelector("h1").innerHTML = " Player on Right Wins! 🚩"
+        document.querySelector("h1").innerHTML = player2+ " Wins! 🚩"
 
     } else {
 
